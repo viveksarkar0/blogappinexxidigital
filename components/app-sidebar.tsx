@@ -45,8 +45,7 @@ export function AppSidebar() {
 
   const handleLogout = async () => {
     try {
-      await signOut({ callbackUrl: '/login' });  // Use NextAuth's signOut with callbackUrl
-      // The callbackUrl will redirect to the login page after successful logout
+      await signOut({ callbackUrl: '/' });
     } catch (error) {
       console.error('Error signing out:', error);
     }
