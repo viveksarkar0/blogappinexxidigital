@@ -25,7 +25,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
       </main>
 
       <footer className="bg-gray-800 text-white text-center py-4">
-        <p>© 2024 Mystify-me</p>
+        <p>© 2024 nexxidigital blog app</p>
       </footer>
       </>
   );

@@ -47,7 +47,7 @@ const ArticleDetailsPage = () => {
   }
 
   return (
-    <main className="py-12 px-6 bg-gray-50 min-h-screen">
+    <main className="py-12 px-6 bg-gray-50 min-h-screen w-screen">
       <div className="max-w-3xl mx-auto bg-white p-8 rounded-xl shadow-xl">
         <h1 className="text-4xl font-semibold text-center text-gray-800 mb-8">
           Article Details
