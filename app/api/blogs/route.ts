@@ -17,7 +17,7 @@ export async function GET(req: Request) {
     const response = await axios.get(BASE_URL, {
       params: {
         q: 'tesla',
-        from: '2024-10-26',
+        from: '2024-10-29',
         sortBy: 'publishedAt',
         apiKey: API_KEY,
         page: page,
@@ -31,12 +31,12 @@ export async function GET(req: Request) {
       return NextResponse.json({ error: 'No news articles found' }, { status: 404 });
     }
 
-    // Map and store articles in the database
+   
     const articles = await Promise.all(
       data.articles.map(async (article: {
         source: { id: any }; title: any; description: any; url:string; urlToImage: any; publishedAt: any; content: any;
       }) => {
-        // Check if the article already exists in the database based on URL
+       
         const existingArticle = await prisma.article.findUnique({
           where: { url: article.url }, 
         });
