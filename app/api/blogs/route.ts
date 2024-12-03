@@ -17,7 +17,7 @@ export async function GET(req: Request) {
     const response = await axios.get(BASE_URL, {
       params: {
         q: 'tesla',
-        from: '2024-10-29',
+        from: '2024-11-03',
         sortBy: 'publishedAt',
         apiKey: API_KEY,
         page: page,
